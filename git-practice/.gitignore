@@ -1,0 +1,8 @@
+# ignorre a specific file
+logsfile.txt
+
+# ignpre a folder
+logs-ignore-test/
+
+# ignore a file type ina folder
+logs-ignore-test/*.txt
