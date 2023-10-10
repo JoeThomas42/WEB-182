@@ -1,0 +1,31 @@
+<!--	Author:
+		Date:
+		File:	raffle.html
+		Purpose: Example of a Web Session
+
+-->
+
+<html>
+<head>
+	<title>RAFFLE</title>
+	<link rel ="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+	<h1>Raffle Results</h1>
+	<p>
+	<form action = "raffle.php" method = "post" >
+		<table>
+			<tr><td>What is your full name?</td>
+				<td><input type = "text" size = "20" name = "fullName"></td></tr> 
+			<tr><td>What city do you live in?</td>
+				<td><input type = "text" size = "20" name = "city"></td></tr> 
+			<tr><td>What is your raffle ticket number?</td>
+				<td><input type = "text" size = "20" name = "ticketNum"></td></tr>
+		</table>
+		<p>
+			<input type = "submit" value = "Let's see if you won!">
+		</p>
+	</form>
+</body>
+</html>

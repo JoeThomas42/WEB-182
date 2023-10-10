@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--Author:
+	Date:
+	File:	modify1.html
+	Purpose:Chapter 13 Exercise
+
+	modify1.html asks the user to submit their hours worked and pay rate.
+	The current version of modify1.php updates the hourly wage to 8.00
+	if it is less than 8.00, then calculates the weekly pay and a bonus,
+	and displays the results. The program does this without using any
+	functions.
+
+	Change modify1.php so that it uses the setMinimumWage(), getWage() and
+	getBonus() functions that are provided in the inc-wage-functions.php file
+	instead of performing these calculations directly.Note that your program
+	becomes much simpler.
+
+-->
+
+<html>
+<head>
+	<title>Modify1</title>
+	<link rel ="stylesheet" type="text/css" href="sample.css">
+</head>
+<body>
+
+	<h1>Modify1</h1>
+
+	<form action = "modify1.php" method = "post" >
+
+		<label>Hours worked:
+			<input type = "text" size = "10" name = "hoursWorked"></label>
+		<label>Hourly wage:
+			<input type = "text" size = "10" name = "hourlyWage"></label>
+
+		<input class = "submit" type = "submit" value = "Calculate My Pay">
+	</form>
+
+</body>
+</html>

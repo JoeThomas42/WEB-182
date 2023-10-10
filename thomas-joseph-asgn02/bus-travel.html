@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--	Author:
+		Date:
+		File:	bus-travel.html
+		Purpose: Chapter 13 Exercise
+-->
+
+<html>
+<head>
+	<title>BUSINESS TRAVEL</title>
+	<link rel ="stylesheet" type="text/css" href="sample.css">
+</head>
+
+<body>
+	<h1>BUSINESS TRAVEL REIMBURSEMENT FORM</h1>
+	<p>This program will calculate your Travel Reimbursement.</p>
+	
+	<form action = "bus-travel.php" method = "post">
+	
+	<label>Date:
+        <input type = "text" size = "10" name = "tripDate"></label>
+	
+	<label>Miles Travelled:
+        <input type = "text" size = "10" name = "miles"></label>
+	
+	<label>Include breakfast expenses?
+        <select name = "breakfast">
+            <option>YES</option>
+            <option>NO</option>
+        </select></label>
+	
+	<label>Include lunch expenses?
+        <select name = "lunch">
+            <option>YES</option>
+            <option>NO</option>
+        </select></label>
+	
+	<label>Include dinner expenses?
+        <select name = "dinner">
+            <option>YES</option>
+            <option>NO</option>
+        </select></label>
+	
+	<label>Include a hotel expenses?
+        
+        <select name = "hotel">
+            <option>YES</option>
+            <option>NO</option>
+        </select></label>
+	
+	<input class = "submit" type = "submit" value = "Calculate Reimbursement">
+	</form>
+
+</body>
+</html>

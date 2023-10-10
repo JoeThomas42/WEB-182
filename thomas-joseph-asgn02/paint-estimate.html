@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--	Author:
+		Date:
+		File:	paint-estimate.html
+		Purpose:
+-->
+
+<html>
+<head>
+	<title>King Painting</title>
+	<link rel ="stylesheet" type="text/css" href="sample.css">
+</head>
+
+<body>
+<h1>King Painting</h1>
+<p>Use this form to obtain a quick estimate of the cost to paint a room</p>
+
+<p>
+	<form action = "paint-estimate.php" method = "post" >
+
+		<label>Room length in feet:
+		<input type = "text" size = "5" name = "roomLength"></label>
+
+		<label>Room width in feet:
+		<input type = "text" size = "5" name = "roomWidth"></label>
+
+		<label>Room height in feet:
+		<input type = "text" size = "5" name = "roomHeight"></label>
+
+		<label>Select paint quality:
+		<select name = "paint">
+			<option>Premium</option>
+			<option>Regular</option>
+		</select></label>
+
+		<input class = "submit" type = "submit" value = "Estimate Painting Cost">
+    </form>
+</body>
+</html>

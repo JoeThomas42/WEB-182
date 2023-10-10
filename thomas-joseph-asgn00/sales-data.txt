@@ -1,0 +1,10 @@
+Smith:234.50
+Jones:653.00
+Smith:704.75
+Smith:202.25
+Jones:430.85
+Smith:452.20
+Jones:902.15
+Jones:425.15
+Smith:650.00
+Smith:225.45

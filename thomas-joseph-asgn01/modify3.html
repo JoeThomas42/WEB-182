@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--Author:
+	Date:
+	File:	modify3.html
+	Purpose:Chapter 12 Exercise
+
+	modify3.html provides the user with a form to submit the name of a game player. 
+	modify3.php contains an array that stores the game characters of each player,
+	indexed by the player names. The application receives the name submitted by the
+	user and uses an IF..ELSE structure to display the correct game character. 
+	Modify this by replacing the entire IF..ELSE structure with a single statement 
+	that looks up the game character using the $playerName variable and assigns 
+	the correct character to the $character variable. 
+	You do not need to change modify3.html.
+-->
+
+<html>
+<head>
+	<title>Modify3</title>
+	<link rel ="stylesheet" type="text/css" href="sample.css">
+</head>
+<body>
+
+	<h1>Modify3</h1>
+	<p>I can tell you a player's game character.</p>
+	
+	<form action = "modify3.php" method = "post" >
+
+        <label>Choose a player: 
+            <select name="playerName">
+            <option>Bob</option>
+            <option>Mary</option>
+            <option>Christine</option>
+            <option>Joe</option>	
+            </select></label>
+        
+	<input class = "submit" type = "submit" value = "Submit the player name">
+	</form>
+
+</body>
+</html>

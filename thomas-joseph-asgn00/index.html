@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>asgn00</title>
+  </head>
+
+  <body>
+    <h1>asgn00 - Input Review</h1>
+
+    <form action="index.php" method="post">
+      <fieldset>
+        <legend>Login</legend>
+        <label for="username">User</label>
+        <input type="text" id="username" name="username"><br>
+        <label for="pw">Pass</label>
+        <input type="password" id="pw" name="pw"><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Which is your favorite operating system?</legend>
+        <input type="radio" name="os" value="windows" id="windows">
+        <label for="windows">Windows</label><br>
+        <input type="radio" name="os" value="linux" id="linux">
+        <label for="linux">Linux</label><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>My favorite music is:</legend>
+        <input type="checkbox" name="musics[]" id="rock" value="rock">
+        <label for="rock">Rock</label><br>
+        <input type="checkbox" name="musics[]" id="opera" value="opera">
+        <label for="opera">Opera</label><br>
+        <input type="checkbox" name="musics[]" id="electronic" value="electronic">
+        <label for=" electronic">Electronic</label><br>
+        <input type="checkbox" name="musics[]" id="country" value="country">
+        <label for="country">Country</label>
+      </fieldset>
+
+      <p><button type="reset">Reset</button>&nbsp;
+        <input type="submit" value="Send">
+      </p>
+    </form>
+
+  </body>
+
+</html>

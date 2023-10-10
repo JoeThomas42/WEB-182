@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Merriweather&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font: 17px/1.5 'Merriweather', serif;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 2rem;
+  text-align: center;
+  width: 50%;
+}
+
+table {
+  font-family: 'Lato', sans-serif;
+  border: 1px solid #333;
+  border-collapse: collapse;
+}
+
+tr,
+td {
+  padding: .25rem;
+};

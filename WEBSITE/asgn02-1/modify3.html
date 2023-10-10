@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--Author:
+	Date:
+	File:	modify3.html
+	Purpose:Chapter 13 Exercise
+
+	modify3.html asks the user to submit their hours worked and pay rate.
+	modify3.php uses functions from the inc-wage-functions.php file to
+	calculate the wage and bonus. The program also calls a function
+	named getOvertimeHours() in order to display the number of overtime
+	hours worked. However this function does not exist!
+
+	Modify inc-wage-functions.php by adding this function. The function
+	should be designed to receive the hours worked and return the
+	number of overtime hours. If the hours worked is 40 or less,
+	the function should return 0, otherwise the function should return
+	the the result of subtracting 40 from the hours worked.
+
+-->
+
+<html>
+<head>
+	<title>Modify3</title>
+	<link rel ="stylesheet" type="text/css" href="sample.css">
+</head>
+<body>
+
+	<h1>Modify3</h1>
+
+	<form action = "modify3.php" method = "post" >
+		<label>Hours worked:
+			<input type = "text" size = "10" name = "hoursWorked"></label>
+			
+		<label>Hourly wage:
+			<input type = "text" size = "10" name = "hourlyWage"></label>
+
+		<input class = "submit" type = "submit" value = "Calculate My Pay">
+	</form>
+
+</body>
+</html>
