@@ -1,56 +1,105 @@
-body 	{
-   background: white
+* {
+  box-sizing: border-box;
 }
 
-h1 	{
-  font-family: Arial, Helvetica, Sans-serif; 
-  font-size:18pt;
-	color:red; font-weight:bold; 
-}
-
-h2 	{
+body {
+  background: white;
   font-family: Arial, Helvetica, Sans-serif;
-  font-size:12pt;
-	color:black;
-  font-weight:bold;
+  max-width: fit-content;
+  margin: 0 auto;
 }
 
-p	{
-  font-family: Arial, Helvetica, Sans-serif; font-size:10pt;
-	color:black;
+h1 {
+  font-size: 18pt;
+  color: red;
+  font-weight: bold;
+  text-align: center;
 }
 
-p.alert	{
-  color:red;
-  font-style: italic;
-}
-
-table	{
+h2 {
+  font-size: 12pt;
   color: black;
-  font-family: Arial, Helvetica, Sans-serif; font-size:10pt;
+  font-weight: bold;
+}
+
+p {
+  font-size: 10pt;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  font-size: 10pt;
+  color: black;
+}
+
+p.alert {
+  font-style: italic;
+  color: red;
+}
+
+table,
+th,
+td {
+  font-size: 10pt;
+  color: black;
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: .5rem;
 }
 
 td.center {
-  text-align:center;
-}
-
-td.right {
-  text-align:right;
+  text-align: center;
 }
 
 select {
+  font-size: 10pt;
+  font-weight: bold;
+  color: blue;
   background: lightBlue;
-  color:blue;
-  font-family: Arial, Helvetica, Sans-serif;
-  font-size:10pt;
-	font-weight: bold;
 }
 
 option {
+  font-size: 10pt;
+  color: black;
   background: silver;
-	color:black;
-  font-family: Arial, Helvetica, Sans-serif; font-size:10pt;
 }
 
+form {
+  display: inline-block;
+  margin-left: 10px;
+  background: #e6ecff;
+  border: 1px solid black;
+}
 
+label {
+  font-size: 10pt;
+  color: black;
+  clear: left;
+  float: left;
+  width: 240px;
+  margin: 5px;
+  line-height: 18px;
+}
 
+input,
+select {
+  float: right;
+  width: auto;
+}
+
+input.submit {
+  clear: left;
+  float: right;
+  width: 180px;
+  margin: 5px;
+}
+
+input.reset {
+  float: right;
+  width: 180px;
+  margin: 5px;
+}
