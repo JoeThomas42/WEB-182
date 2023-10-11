@@ -33,7 +33,7 @@
 
       <?php foreach($subjects as $subject) { ?>
         <tr>
-          <td><?php echo $subject['id']; ?></td>
+          <td><? echo $subject['id']; ?></td>
           <td><?php echo $subject['position']; ?></td>
           <td><?php echo $subject['visible'] == 1 ? 'true' : 'false'; ?></td>
     	    <td><?php echo $subject['menu_name']; ?></td>
