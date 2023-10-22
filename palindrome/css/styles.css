@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  align-items: center;
+  background: #dedcc0;
+  display: flex;
+  flex-direction: column;
+  margin: 5rem auto;
+}
+
+header {
+  background: #fff;
+  width: 100%;
+  text-align: center;
+}
+
+main {
+  margin: 2rem;
+}
