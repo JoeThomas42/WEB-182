@@ -1,6 +1,6 @@
 <?php
 include 'functions/utility-functions.php';
-$fileName = 'names-short-list.txt';
+$fileName = 'names.txt';
 
 $lineNumber = 0;
 
@@ -46,8 +46,16 @@ for($i = 0; $i < sizeof($fullNames); $i++) {
 }
 
 // ~~~~~~~~~~~~ Display results ~~~~~~~~~~~~ //
+echo '<h1 id=\'top\'>Names - Results</h1>';
 
-echo '<h1>Names - Results</h1>';
+echo "<h3>Skip to:</h3>";
+echo "<a href='#valid'>Valid Names</a><br>";
+echo "<a href='#unique-full'>Unique Full Names</a><br>";
+echo "<a href='#unique-last'>Unique Last Names</a><br>";
+echo "<a href='#unique-first'>Unique First Names</a><br>";
+echo "<a href='#most-last'>Most Common Last Names</a><br>";
+echo "<a href='#most-first'>Most Common First Names</a><br>";
+
 
 echo '<h2>All Names</h2>';
 echo "<p>There are " . sizeof($fullNames) . " total names</p>";
@@ -57,7 +65,8 @@ echo '<ul style="list-style-type:none">';
     }
 echo "</ul>";
 
-echo '<h2>All Valid Names</h2>';
+echo '<h2 id=\'valid\'>All Valid Names</h2>';
+echo "<a href='#top'>Back to top...</a>";
 echo "<p>There are " . sizeof($validFullNames) . " valid names</p>";
 echo '<ul style="list-style-type:none">';    
     foreach($validFullNames as $validFullName) {
@@ -65,7 +74,9 @@ echo '<ul style="list-style-type:none">';
     }
 echo "</ul>";
 
-echo '<h2>Unique Names</h2>';
+// unique full names
+echo '<h2 id=\'unique-full\'>Unique Valid Full Names</h2>';
+echo "<a href='#top'>Back to top...</a>";
 $uniqueValidNames = (array_unique($validFullNames));
 echo ("<p>There are " . sizeof($uniqueValidNames) . " Unique names</p>");
 echo '<ul style="list-style-type:none">';    
@@ -76,7 +87,8 @@ echo "</ul>";
 
 
 // unique last names
-echo '<h2>Unique Valid Last Names</h2>';
+echo '<h2 id=\'unique-last\'>Unique Valid Last Names</h2>';
+echo "<a href='#top'>Back to top...</a>";
 $validUniqueLastNames = array_unique($validLastNames);
 echo "<p>There are " . sizeof($validUniqueLastNames) . " unique valid last names</p>";
 echo '<ul style="list-style-type:none">';
@@ -86,7 +98,8 @@ echo '<ul style="list-style-type:none">';
   echo "</ul>";
 
 // unique first names
-echo '<h2>Unique Valid First Names</h2>';
+echo '<h2 id=\'unique-first\'>Unique Valid First Names</h2>';
+echo "<a href='#top'>Back to top...</a>";
 $validUniqueFirstNames = array_unique($validFirstNames);
 echo "<p>There are " . sizeof($validUniqueFirstNames) . " unique valid first names</p>";
 echo '<ul style="list-style-type:none">';
@@ -96,11 +109,12 @@ foreach ($validUniqueFirstNames as $validUniqueFirstName) {
 echo "</ul>";
 
 // most common last names
-echo '<h2>Most Common Last Names</h2>';
+echo '<h2 id=\'most-last\'>Most Common Last Names</h2>';
+echo "<a href='#top'>Back to top...</a>";
 $lastNamesCount = array_count_values($validLastNames);
 arsort($lastNamesCount);
 echo '<ul style="list-style-type:none">';
-$limit = 5;
+$limit = 10;
 foreach ($lastNamesCount as $lastName => $count) {
     echo "<li>$lastName: $count occurrences</li>";
     $limit--;
@@ -111,11 +125,12 @@ foreach ($lastNamesCount as $lastName => $count) {
 echo '</ul>';
 
 // most common first names
-echo '<h2>Most Common First Names</h2>';
+echo '<h2 id=\'most-first\'>Most Common First Names</h2>';
+echo "<a href='#top'>Back to top...</a>";
 $firstNamesCount = array_count_values($validFirstNames);
 arsort($firstNamesCount);
 echo '<ul style="list-style-type:none">';
-$limit = 5;
+$limit = 10;
 foreach ($firstNamesCount as $firstName => $count) {
     echo "<li>$firstName: $count occurrences</li>";
     $limit--;
